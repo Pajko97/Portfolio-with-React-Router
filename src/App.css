@@ -1,4 +1,4 @@
-@media screen and (max-width:992px) {
+/* @media screen and (max-width:992px) {
     
   .nav-section {
       width:100% !important;
@@ -21,7 +21,7 @@
       margin:0;
       font-size: 16px;
   }
-}
+} */
 html, body {
   margin:0;
   padding:0;
@@ -42,6 +42,7 @@ html, body {
   background-size: cover;
   background-repeat: none;
   text-align: center;
+  color:gainsboro;
   font-size:1rem;
 }
 :root {
@@ -73,7 +74,7 @@ html, body {
   background-repeat: none;
 }
 
-.nav-section, content-section {
+.nav-section {
   padding:1%;
 }
 
@@ -81,7 +82,7 @@ html, body {
 .nav-section {
   background-color: var(--color1);
   height:100vh;
-  width:7%;
+  width:10%;
   justify-content: start;
   display:flex;
   flex-direction:column;
@@ -98,10 +99,11 @@ html, body {
 }
 
 .link{
-  padding:5px;
+  padding:4px 10px;
   -webkit-transition: background-color .5s, border-radius .5s;
   -o-transition: background-color .5s, border-radius .5s;
   transition: background-color .5s, border-radius .5s;
+
 }
 
 .link:hover {
@@ -110,11 +112,6 @@ html, body {
   border-radius:10px;
 }
 
-.git {
-  padding:10px;
-  margin-top:50vh;
-  
-}
 
 
                               /* Home */
@@ -122,7 +119,9 @@ html, body {
   height:auto;
   position: relative;
   font-size:2rem;
-  justify-self: center;
+  display:flex;
+  flex-direction: column;
+  width:100%;
 }
 
 .home h1 {
@@ -141,9 +140,9 @@ html, body {
 }
 
 .home h1, .home h3 {
-  margin-left:25%;
 /*   background-color: rgba(43, 43, 43, 0.5); */
-  width:60%;
+  width:100%;
+  font-size:4rem;
   
 }
 
@@ -157,7 +156,7 @@ html, body {
   -webkit-box-direction:normal;
       -ms-flex-direction:row;
           flex-direction:row;
-  margin-left: 10%;
+  WIDTH:100%;
   -ms-flex-line-pack:center;
       align-content:center;
   -webkit-box-pack: center;
@@ -253,6 +252,7 @@ html, body {
       -ms-flex-pack:center;
           justify-content:center;
   font-size:1rem;
+  width:100%;
 }
 .about p {
   font-size:1rem;
@@ -277,18 +277,35 @@ html, body {
       -ms-flex-pack: center;
           justify-content: center;
   width:40%;
-  margin-left:2%;
+  margin-left:15%;
+  margin-top:5%;
+  color:gainsboro;
   padding:2%;
+  height:80vh;
   border-radius:20px;
   background-color:var(--color2);
 }
 .about img {
   max-width:250px;
   max-height:300px;
+  margin-top:10%;
 }
 .about i {
   padding:0.22rem;
+  font-size:3rem;
 }
+.icon-javascript {color:yellow;}
+.icon-html5{color:#E44D26;}
+.icon-css3{color:#1B73BA;}
+.icon-jquery{color:#045FA6;}
+.icon-reactjs{color:#61DBFB;}
+.icon-bootstrap{color:#583B7E;}
+.icon-git{color:#F15034;}
+.icon-sass{color:fuchsia;}
+.icon-nodejs{color:#689F63;}
+.icon-npm{color:#689F63}
+.icon-fire-alt{color:#FFCB2E}
+.icon-gulp-alt{color:#FFCB2E}
 
 .about-me {
   text-align: left;
@@ -319,8 +336,7 @@ html, body {
           flex-direction:column;
   
           justify-content: center;
-          margin-left: 41.5%;
-
+        width:100%;
 
 }
 .contact form {
@@ -334,6 +350,8 @@ html, body {
   -webkit-box-align:center;
       -ms-flex-align:center;
           align-items:center;
+          width:70%;
+          align-self: center;
   
   -webkit-animation-name: subhead;
           animation-name: subhead;
@@ -353,14 +371,20 @@ html, body {
 
 }
 .contact #name-field {
-  padding:3px 10px;
+  padding:5px 15px;
+  border-radius:10px;
+  border:0;
 }
 .contact #mail-field {
-  padding:3px 10px;
+  padding:5px 15px;
+  border-radius:10px;
+  border:0;
 }
 .contact #message-field {
   height:150px;
-  width:100%;
+  border-radius:10px;
+  border:0;
+  width:70%;
   padding:10px 10px;
 }
 .contact button {

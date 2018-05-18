@@ -1,9 +1,9 @@
 import React from 'react';
-
+import avatar from './images/avatar (1).png'
 const About = () => {
   return (
     <div className="about">
-    <img src="images/avatar.png"/>
+    <img src={avatar}/>
     <div className="bio">
         <h2 className="name">Pavle Janjusevic</h2>
         <h3 className="from">From Belgrade, Serbia</h3>

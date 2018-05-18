@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CSS from './App.css'
+import Icons from './Icons/font-mfizz.css'
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
