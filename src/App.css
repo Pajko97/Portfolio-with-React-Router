@@ -52,31 +52,8 @@ html, body {
   --color4: #778DA9;
   --color5: #E0E1DD;
 }
-.current {
-  background-color: var(--color4);
-  border-radius:10px;
-}
 
-.wrapper {
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:horizontal;
-  -webkit-box-direction:normal;
-      -ms-flex-direction:row;
-          flex-direction:row;
-  background-color: #0C1B20;
-  height:100vh;
-  font-family: Ubuntu Light, 'sans-serif';
-/*     background-image: url('images/home-picc.jpeg');
-*/    background-position: center;
-  background-size: cover;
-  background-repeat: none;
-}
 
-.nav-section {
-  padding:1%;
-}
 
                               /* Nav section */
 .nav-section {
@@ -253,6 +230,7 @@ html, body {
           justify-content:center;
   font-size:1rem;
   width:100%;
+  
 }
 .about p {
   font-size:1rem;
@@ -281,7 +259,7 @@ html, body {
   margin-top:5%;
   color:gainsboro;
   padding:2%;
-  height:80vh;
+  height:60vh;
   border-radius:20px;
   background-color:var(--color2);
 }
@@ -371,12 +349,12 @@ html, body {
 
 }
 .contact #name-field {
-  padding:5px 15px;
+  padding:15px 15px;
   border-radius:10px;
   border:0;
 }
 .contact #mail-field {
-  padding:5px 15px;
+  padding:15px 15px;
   border-radius:10px;
   border:0;
 }
