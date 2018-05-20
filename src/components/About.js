@@ -1,5 +1,6 @@
 import React from 'react';
 import avatar from './images/avatar (1).png'
+import webpack from '../Icons/webpack.svg'
 const About = () => {
   return (
     <div className="about">
@@ -27,8 +28,8 @@ const About = () => {
             <i className="icon-sass"></i>
             <i className="icon-nodejs"></i>
             <i className="icon-npm"></i>
-            <i className="icon-fire-alt"></i>
-            <i className="icon-gulp-alt"></i>
+            
+
 
 
 

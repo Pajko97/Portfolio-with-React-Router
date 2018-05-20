@@ -239,7 +239,6 @@ html, body {
           animation-name:head;
   -webkit-animation-duration:1s;
           animation-duration:1s;
-  overflow: hidden;
 }
 .about .bio {
   display:-webkit-box;
@@ -259,7 +258,7 @@ html, body {
   margin-top:5%;
   color:gainsboro;
   padding:2%;
-  height:60vh;
+  height:80vh;
   border-radius:20px;
   background-color:var(--color2);
 }
@@ -354,7 +353,7 @@ html, body {
   border:0;
 }
 .contact #mail-field {
-  padding:15px 15px;
+  padding:14px 14px;
   border-radius:10px;
   border:0;
 }
@@ -363,7 +362,8 @@ html, body {
   border-radius:10px;
   border:0;
   width:70%;
-  padding:10px 10px;
+  max-width:400px;
+  padding:9px 9px;
 }
 .contact button {
   background-color:gainsboro;
