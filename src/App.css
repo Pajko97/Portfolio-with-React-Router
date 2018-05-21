@@ -59,7 +59,7 @@ html, body {
 .nav-section {
   background-color: var(--color1);
   height:100vh;
-  width:10%;
+  width:8%;
   justify-content: start;
   display:flex;
   flex-direction:column;
@@ -68,25 +68,59 @@ html, body {
           box-shadow: 9px 1px 30px -4px rgba(0,0,0,0.75);
 }
 
+#home {
+  border-right: 5px solid yellow;
+}
+
+#home:hover {
+  background-color:yellow;
+  color:var(--color1)
+}
+
+#about {
+  border-right: 5px solid red;
+}
+
+#about:hover {
+  background-color:red;
+  color:var(--color5)
+}
+
+#contact {
+  border-right:5px solid blue;
+}
+
+#contact:hover {
+  background-color:blue;
+  color:var(--color5);
+}
+
+#projects{
+  border-right:5px solid green;
+}
+
+#projects:hover {
+  background-color:green;
+  color:var(--color5);
+}
+
 .link {
   text-align: center;
   color: white;
   text-decoration: none !important;
-  margin:20% auto;
+  margin:20% 0;
 }
 
 .link{
-  padding:4px 10px;
+  padding:4px 5px;
   -webkit-transition: background-color .5s, border-radius .5s;
   -o-transition: background-color .5s, border-radius .5s;
   transition: background-color .5s, border-radius .5s;
-
 }
 
 .link:hover {
   background-color:white;
   color: var(--color2);
-  border-radius:10px;
 }
 
 
@@ -108,6 +142,7 @@ html, body {
           animation-duration: 1s;
   font-weight: 200;
 }
+
 .home h3 {
   -webkit-animation-name: reverseWoble;
           animation-name: reverseWoble;
@@ -158,23 +193,30 @@ html, body {
   -webkit-box-direction:normal;
       -ms-flex-direction:column;
           flex-direction:column;
-  background: rgba(13, 27, 42, 0.5);
+  background: var(--color4);
   margin:auto 2%;
   width:250px;
-  border: 1px solid white;
-  border-radius:10%;
+/*   border: 1px solid white;
+ */  border-radius:10%;
   padding:1%;
   
+}
+.project-tech {
+  font-size:2rem;
 }
 .project h3 {
   font-size:2rem;
   margin:auto 10%;
+  color: var(--color2)
 }
+
 .project a {
   font-size:1.4rem;
-  color: var(--color5);
+  color: var(--color);
+  background: var(--color3);
   text-decoration: none;
 }
+
 .project a:hover {
   color:var(--color1);
   -webkit-transition:background-color 0.45s ease;
@@ -182,13 +224,14 @@ html, body {
   transition:background-color 0.45s ease;
   background-color:var(--color5);
 }
+
 .project-img {
   width:90%;
   margin:5px 5%;
 }
+
 .project .tech img {
   margin:5px !important;
-
 }
 
 .tech {
@@ -199,17 +242,18 @@ html, body {
   -webkit-box-direction:normal;
       -ms-flex-direction:row;
           flex-direction:row;
-  margin:2% 15%;
-  padding:0px;
-  border:1px solid white;
+  margin:2% 12%;
+  padding:10px 20px;
   -ms-flex-line-pack:center;
       align-content:center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          background: var(--color2);
+          border-radius:10px;
 }
 .tech i {
-  margin:auto 1%;
+  margin:auto 3%;
   padding:2%;
 }
 
@@ -259,7 +303,7 @@ html, body {
   color:gainsboro;
   padding:2%;
   height:80vh;
-  border-radius:20px;
+  border-radius:5px;
   background-color:var(--color2);
 }
 .about img {
@@ -349,17 +393,17 @@ html, body {
 }
 .contact #name-field {
   padding:15px 15px;
-  border-radius:10px;
+  border-radius:5px;
   border:0;
 }
 .contact #mail-field {
   padding:14px 14px;
-  border-radius:10px;
+  border-radius:5px;
   border:0;
 }
 .contact #message-field {
   height:150px;
-  border-radius:10px;
+  border-radius:5px;
   border:0;
   width:70%;
   max-width:400px;
